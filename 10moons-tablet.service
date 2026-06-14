@@ -1,0 +1,14 @@
+[Unit]
+Description=10moons Tablet Driver
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/10moons-driver/driver.py -c /opt/10moons-driver/config-vin1060plus.yaml
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

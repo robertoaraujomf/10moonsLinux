@@ -1,0 +1,12 @@
+Driver independente para mesa digitalizadora 10moons 1060 Plus Black em Linux
+=============================================================================
+
+Este driver foi desenvolvido de forma independente para que a renderização da
+mesa digitalizadora 10moons 1060 plus black seja executada corretamente em
+dispositivos com distribuições Linux.
+
+Autor: Roberto Araujo de Moraes Freitas
+Ano: 2026
+Doações: PIX robertoaraujomf@gmail.com
+
+Repositório: https://github.com/robertoaraujomf/10moonsLinux
