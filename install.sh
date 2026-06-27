@@ -1,6 +1,6 @@
 #!/bin/bash
 # Instala o driver da mesa 10moons
-# Pode ser executado via terminal ou via .desktop (pkexec)
+# Pode ser executado via terminal
 set -e
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -57,30 +57,4 @@ echo " Instalação concluída!"
 
 echo " A mesa 10moons agora funciona em área total"
 echo " automaticamente ao conectar o USB."
-echo ""
-echo " Atalho de instalação criado no menu do sistema."
 echo "=========================================="
-
-# Criar .desktop no menu do sistema
-cat > /usr/share/applications/10moons-tablet.desktop << 'EOF'
-[Desktop Entry]
-Type=Application
-Name=10moons Tablet - Reinstalar
-Comment=Reinstalar o driver da mesa digitalizadora 10moons
-Exec=pkexec bash /opt/10moons-driver/install.sh
-Icon=drive-removable-media-usb
-Terminal=true
-Categories=Settings;Hardware;
-EOF
-
-# Também criar um para desinstalar
-cat > /usr/share/applications/10moons-tablet-uninstall.desktop << 'EOF'
-[Desktop Entry]
-Type=Application
-Name=10moons Tablet - Desinstalar
-Comment=Remover o driver da mesa digitalizadora 10moons
-Exec=pkexec bash /opt/10moons-driver/uninstall.sh
-Icon=drive-removable-media-usb
-Terminal=true
-Categories=Settings;Hardware;
-EOF
