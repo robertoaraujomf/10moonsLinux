@@ -62,16 +62,18 @@ actions:
         up: BTN_TOUCH
 
     # Buttons on stylus in <button code> - <action name> format
-    pen_buttons:
-        # See "Pen button: ..." in debug mode to view codes of pressed buttons
-        # To get available action, type command below in terminal
-        # python -c "from evdev import ecodes; print([x for x in dir(ecodes) if 'BTN_' in x])"
-
-        # 1st button (closest to the tip)
-        4: BTN_STYLUS
-
-        # 2nd button
-        6: BTN_STYLUS2
+    # Desabilitados por padrão (os botões da caneta atrapalham desenho/escrita).
+    # Para reativar, descomente as linhas abaixo.
+    #pen_buttons:
+    #    # See "Pen button: ..." in debug mode to view codes of pressed buttons
+    #    # To get available action, type command below in terminal
+    #    # python -c "from evdev import ecodes; print([x for x in dir(ecodes) if 'BTN_' in x])"
+    #
+    #    # 1st button (closest to the tip)
+    #    4: BTN_STYLUS
+    #
+    #    # 2nd button
+    #    6: BTN_STYLUS2
 
     # Buttons on tablet itself in <key code> - <action name> format
     tablet_buttons:
