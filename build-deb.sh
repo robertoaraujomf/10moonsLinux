@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION="1.0.0"
+VERSION="1.1.0"
 PACKAGE="10moons-tablet-driver"
 BUILD_DIR="/tmp/${PACKAGE}_${VERSION}_all"
 
